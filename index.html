@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
+<title>Aplicación Web RSA</title>
 
 <script src="codigo.js"></script>
 
 </head>
+
 <body>
 
-<h1>Aplicaciòn web de RSA</h1>
-<label>Ingrese el valor de e </label>
+<h1>Aplicación web de RSA</h1>
+
+<label>Ingrese el valor de e</label>
 <input type="number" id="valore">
-<br>
+<br><br>
 
-<label>Ingrese el valor de n </label>
+<label>Ingrese el valor de n</label>
 <input type="number" id="valorn">
-<br>
+<br><br>
 
-<label>Ingrese el texto encriptar </label>
+<label>Ingrese el texto a encriptar</label>
 <input type="text" id="textoe">
-<br>
+<br><br>
 
-<input type="submit" onclick="encriptar()">
+<button onclick="encriptar()">Encriptar</button>
 
-<p id="rta">
- Sin respuesta
+<br><br>
+
+<p id="rta">Sin respuesta</p>
 
 </body>
 </html>

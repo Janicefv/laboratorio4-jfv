@@ -1,15 +1,18 @@
 function encriptar() 
 {
-    let e= 0;
-    let n= 0;
-    let valore="";
+    let e = document.getElementById("valore").value;
+    let n = document.getElementById("valorn").value;
+    let texto = document.getElementById("textoe").value;
 
-    valore= document.getElementById("valor").value;
-    document.getElementById("rta").innerHTML="Respuesta: "+textoe;
+    let resultado = "";
 
+    for(let i = 0; i < texto.length; i++)
+    {
+        let ascii = texto.charCodeAt(i);
+        let cifrado = (Math.pow(ascii, e)) % n;
 
-    
+        resultado += cifrado + " ";
+    }
 
-
-
+    document.getElementById("rta").innerHTML = "Respuesta: " + resultado;
 }
