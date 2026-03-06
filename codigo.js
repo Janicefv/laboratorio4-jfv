@@ -14,5 +14,5 @@ function encriptar()
         resultado += cifrado + " ";
     }
 
-    document.getElementById("rta").innerHTML = "Respuesta: " + resultado;
+    document.getElementById("rta").innerHTML = "La respuesta es: " + resultado;
 }
